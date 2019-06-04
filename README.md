@@ -15,11 +15,17 @@ Mr. Kim은 시험 공부를 하던 중, demand paging이 잘 이해가 가지 �
 
 ## Virtual address의 구조
 
+![](https://github.com/AjouOSTA/PA3/blob/master/images/address-format.png)
+CREDIT:  Silberschatz et al, "Operating System Concepts", 9th
+
 뒤의 16 bit만을 masking 한 뒤, page number와 offset을 얻어낸다.
 
 [What is Bit Masking?](https://stackoverflow.com/questions/10493411/what-is-bit-masking)
 
 ## 흐름도
+
+![](https://github.com/AjouOSTA/PA3/blob/master/images/flowchart.png)
+CREDIT:  Silberschatz et al, "Operating System Concepts", 9th
 
 # 주요 함수
 
@@ -41,6 +47,6 @@ Mr. Kim은 시험 공부를 하던 중, demand paging이 잘 이해가 가지 �
 
 - Deadline: **2019년 6월 18일 오후 11시 59분**
 - 구현 90점 + 보고서 10점
-    - linear-access.txt 입력과 출력이 맞는 경우 (30점)
-    - random-access.txt 입력과 출력이 맞는 경우 (30점)
-    - Page fault rate & TLB hit rate이 맞는 경우 (30점)
+    - linear-access.txt 입력에 따른 출력이 맞는 경우 (30점)
+    - random-access.txt 입력에 따른 출력이 맞는 경우 (30점)
+    - Page fault rate & TLB hit rate이 모두 맞는 경우 (30점)
